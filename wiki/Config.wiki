@@ -1,0 +1,83 @@
+#summary Example of config and commands
+#labels kinect,kari,config
+
+= Introduction =
+
+example of a rule/execution set in the config file:
+
+[[set]]
+
+[[require]]
+
+bodyAction	= handLeftForward
+
+distanceMin	= 10
+
+distanceMax	= 20
+
+[[execute]]
+
+keyTap		= a
+
+[[execute]]
+
+keyHold		= b
+
+
+
+Available body actions:
+
+turnLeft
+
+turnRight
+
+handLeftForward
+
+handLeftDown
+
+handLeftUp
+
+handLeftOut
+
+handLeftAcross
+
+handRightForward
+
+handRightDown
+
+handRightUp
+
+handRightOut
+
+handRightAcross
+
+footLeftForward
+
+footLeftOut
+
+footLeftBackward
+
+footLeftUp
+
+footRightForward
+
+footRightOut
+
+footRightBackward
+
+footRightUp
+
+jump
+
+crouch
+
+
+
+= Details =
+
+*keyHold* will hold that key the entire time the requirements are still being met.
+
+*keyTap* will execute once each time a new instance of the requirements are met.
+
+
+distance values are considered inches.
