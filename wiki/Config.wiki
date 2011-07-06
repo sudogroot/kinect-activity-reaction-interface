@@ -73,11 +73,21 @@ crouch
 
 
 
+
 = Details =
 
 *keyHold* will hold that key the entire time the requirements are still being met.
 
 *keyTap* will execute once each time a new instance of the requirements are met.
+
+*mouseTap*
+values: mouseLeft , mouseRight
+
+*mouseHold*
+values: mouseLeft , mouseRight
+
+*windowHold*
+eg: windowHold = 1
 
 
 distance values are considered inches.
