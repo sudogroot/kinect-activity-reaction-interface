@@ -5,89 +5,40 @@
 
 example of a rule/execution set in the config file:
 
-[[set]]
-
-[[require]]
-
+----
+{{{
+[set]
+[require]
 bodyAction	= handLeftForward
-
 distanceMin	= 10
-
 distanceMax	= 20
-
-[[execute]]
-
+[execute]
 keyTap		= a
-
-[[execute]]
-
+[execute]
 keyHold		= b
+}}}
+----
 
+Available detected body actions:
 
-
-Available body actions:
-
-turnLeft
-
-turnRight
-
-handLeftForward
-
-handLeftDown
-
-handLeftUp
-
-handLeftOut
-
-handLeftAcross
-
-handRightForward
-
-handRightDown
-
-handRightUp
-
-handRightOut
-
-handRightAcross
-
-footLeftForward
-
-footLeftOut
-
-footLeftBackward
-
-footLeftUp
-
-footRightForward
-
-footRightOut
-
-footRightBackward
-
-footRightUp
-
-jump
-
-crouch
-
-
+||turnLeft||turnRight||jump||crouch||
+||handLeftForward||handLeftDown||handLeftUp||handLeftOut||handLeftAcross||
+||handRightForward||handRightDown||handRightUp||handRightOut||handRightAcross||
+||footLeftForward||footLeftOut||footLeftBackward||footLeftUp||
+||footRightForward||footRightOut||footRightBackward||footRightUp||
 
 
 = Details =
 
-*keyHold* will hold that key the entire time the requirements are still being met.
+*[[execute]]* options
 
-*keyTap* will execute once each time a new instance of the requirements are met.
-
-*mouseTap*
-values: mouseLeft , mouseRight
-
-*mouseHold*
-values: mouseLeft , mouseRight
-
-*windowHold*
-eg: windowHold = 1
+||*keyHold*||will hold that key the entire time the requirements are still being met.||
+||*keyTap*||will execute once each time a new instance of the requirements are met.||
+||*mouseTap*||values: mouseLeft , mouseRight||
+||*mouseHold*||values: mouseLeft , mouseRight||
+||*windowHold*||eg: windowHold = 1||
+||*configLoad*||eg: configLoad = sf4.cfg||
 
 
 distance values are considered inches.
+angle values are considered degrees.
