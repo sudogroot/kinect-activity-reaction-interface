@@ -36,8 +36,27 @@ Available detected body actions:
 ||*keyTap*||will execute once each time a new instance of the requirements are met.||
 ||*mouseTap*||values: mouseLeft , mouseRight||
 ||*mouseHold*||values: mouseLeft , mouseRight||
-||*windowHold*||eg: windowHold = 1||
+||*mouseTrack*||values: drag, relative||
+||*windowHold*||values: drag, relative||
 ||*configLoad*||eg: configLoad = sf4.cfg||
+
+*mouseTrack* and *windowHold* sensitivity is scaled using hands distance between *distanceMin* and *distanceMax*. With near to body being fast moving, and far from body being more precise.
+
+eg:
+----
+{{{
+[set]
+[require]
+bodyAction	= handRightForward
+distanceMin	= 17
+distanceMax	= 30
+angleMin	= -180
+angleMax	= 180
+[execute]
+mouseTrack	= drag
+}}}
+----
+
 
 
 distance values are considered inches.
