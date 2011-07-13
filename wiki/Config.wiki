@@ -3,6 +3,12 @@
 
 = Introduction =
 
+In order for KARI to start tracking your motions, you must stand in the Skeleton Calibration Pose.
+So stand up straight, feet apart past your shoulders, elbows out straight sideways, and hands upwards slightly bent in.
+
+The log window will show that you have been calibrated and will start tracking you.
+
+
 example of a rule/execution set in the config file:
 
 ----
