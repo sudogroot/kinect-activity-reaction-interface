@@ -27,17 +27,31 @@ Available detected body actions:
 ||footLeftForward||footLeftOut||footLeftBackward||footLeftUp||
 ||footRightForward||footRightOut||footRightBackward||footRightUp||
 
+= Require commands =
 
-= Details =
+*[[require]]* options
+
+||distanceMin||Minimum inches from related joint before considered valid||
+||distanceMax||Maximum inches from related joint before considered valid||
+||angleMinX||Minimun X angle from related joint before considered valid||
+||angleMaxX||Maximum X angle from related joint before considered valid||
+||angleMinY||Minimun Y angle from related joint before considered valid||
+||angleMaxY||Maximum Y angle from related joint before considered valid||
+
+
+= Execute commands =
 
 *[[execute]]* options
 
 ||*keyHold*||will hold that key the entire time the requirements are still being met.||
 ||*keyTap*||will execute once each time a new instance of the requirements are met.||
+||*keyPress*||will execute once each time a new instance of the requirements are met.||
+||*keyRelease*||will execute once each time a new instance of the requirements are met.||
 ||*mouseTap*||values: mouseLeft , mouseRight||
 ||*mouseHold*||values: mouseLeft , mouseRight||
-||*mouseTrack*||values: drag, relative||
-||*windowHold*||values: drag, relative||
+||*mouseTrack*||values: absolute, relative, push, drag||
+||*windowHold*||values: absolute, relative, push, drag||
+||*windowShow*||values: maximize, minimize, hide||
 ||*configLoad*||eg: configLoad = sf4.cfg||
 
 *mouseTrack* and *windowHold* sensitivity is scaled using hands distance between *distanceMin* and *distanceMax*. With near to body being fast moving, and far from body being more precise.
@@ -50,14 +64,33 @@ eg:
 bodyAction	= handRightForward
 distanceMin	= 17
 distanceMax	= 30
-angleMin	= -180
-angleMax	= 180
+angleMinX	= 0
+angleMaxX	= 180
+angleMinY	= 0
+angleMaxY	= 180
 [execute]
 mouseTrack	= drag
 }}}
 ----
 
-
-
 distance values are considered inches.
 angle values are considered degrees.
+
+
+
+*Extended keys*
+
+
+||back||tab||return||shift||control||
+||menu||pause||capslock||
+||escape||space||end||home||
+||arrow_left||arrow_up||arrow_right||arrow_down||
+||print||snapshot||insert||delete||
+||win_left||win_right||
+||numpad_0||numpad_1||numpad_2||numpad_3||numpad_4||
+||numpad_5||numpad_6||numpad_7||numpad_8||numpad_9||
+||multiply||add||separator||subtract||decimal||divide||
+||fkey_1||fkey_2||fkey_3||fkey_4||fkey_5||fkey_6||
+||fkey_7||fkey_8||fkey_9||fkey_10||fkey_11||fkey_12||
+||numlock||scroll||
+||shift_left||shift_right||control_left||control_right||menu_left||menu_right||
