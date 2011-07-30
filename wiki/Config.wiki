@@ -29,10 +29,10 @@ Available detected body actions:
 
 ||turnLeft||turnRight||jump||crouch||
 ||leanForward||leanBackward||leanLeft||leanRight||
-||handLeftForward||handLeftDown||handLeftUp||handLeftOut||handLeftAcross||
-||handRightForward||handRightDown||handRightUp||handRightOut||handRightAcross||
-||footLeftForward||footLeftOut||footLeftBackward||footLeftUp||
-||footRightForward||footRightOut||footRightBackward||footRightUp||
+||handLeftForward||handLeftDown||handLeftUp||handLeftOut||handLeftAcross||heandLeftBackward||
+||handRightForward||handRightDown||handRightUp||handRightOut||handRightAcross||handRightBackward||
+||footLeftForward||footLeftOut||footLeftBackward||footLeftUp||footLeftBackward||
+||footRightForward||footRightOut||footRightBackward||footRightUp||footRightBackward||
 
 = Require commands =
 
