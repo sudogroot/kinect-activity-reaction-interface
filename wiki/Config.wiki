@@ -70,9 +70,9 @@ eg:
 bodyAction	= handRightForward
 distanceMin	= 17
 distanceMax	= 30
-angleMinX	= 0
+angleMinX	= 1
 angleMaxX	= 180
-angleMinY	= 0
+angleMinY	= 1
 angleMaxY	= 180
 [execute]
 mouseTrack	= drag
