@@ -28,6 +28,7 @@ keyHold		= b
 Available detected body actions:
 
 ||turnLeft||turnRight||jump||crouch||
+||leanForward||leanBackward||leanLeft||leanRight||
 ||handLeftForward||handLeftDown||handLeftUp||handLeftOut||handLeftAcross||
 ||handRightForward||handRightDown||handRightUp||handRightOut||handRightAcross||
 ||footLeftForward||footLeftOut||footLeftBackward||footLeftUp||
